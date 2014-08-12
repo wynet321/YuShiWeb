@@ -1,1 +1,53 @@
 @CHARSET "UTF-8";
+
+body {
+	background: #fff left top;
+	font-size: 12px;
+	line-height: 1.6em;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555;
+}
+
+#main { width:940px; height:auto; margin:0 auto; text-align:left; }
+
+#header {
+float: left;
+width: 940px;
+height: 120px;
+position: relative;
+}
+
+#logo {
+width: 500px;
+height: 100px;
+position: absolute;
+top: 10px;
+left: 5px;
+}
+
+#menu {
+float: left;
+width: 940px;
+height: 42px;
+}
+
+ul li {
+float: left;
+background: url(menu-divider.jpg) right top no-repeat;
+position: relative;
+display: inline;
+list-style: none;
+}
+.dropdownarrow {
+position: absolute;
+top: 12px;
+right: 7px;
+border: 0px;
+}
+
+#banners_box {
+float: left;
+width: 940px;
+height: 330px;
+margin-top: 1px;
+}
