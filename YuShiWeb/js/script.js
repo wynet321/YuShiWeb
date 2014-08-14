@@ -339,3 +339,14 @@ function ScrollPic(scrollContId, arrLeftId, arrRightId, dotListId) {
 		}
 	}
 };
+
+function picShow(m){
+	 document.getElementById("pic_content_1").style.display="none";
+	 document.getElementById("pic_content_2").style.display="none";
+	 document.getElementById("pic_content_3").style.display="none";
+	 document.getElementById("pic_content_"+m).style.display="block";
+	 document.getElementById("pic_mini_1").className="";
+	 document.getElementById("pic_mini_2").className="";
+	 document.getElementById("pic_mini_3").className="";
+	 document.getElementById("pic_mini_"+m).className="selected";
+}
