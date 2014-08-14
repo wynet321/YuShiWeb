@@ -81,7 +81,7 @@ margin-top: 1px;
 	position:absolute;
 	cursor:pointer;
 	display:block;
-	background:url(./images/arrow.png) no-repeat;
+	background:url("images/arrow.png") no-repeat;
 	overflow:hidden; }
 .jssord05l { background-position:-10px -40px; }
 .jssord05r { background-position:-70px -40px; }
