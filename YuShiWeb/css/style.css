@@ -9,11 +9,10 @@ a {
 }
 
 body {
-	background: #fff left top;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.6em;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #555;
+	color:#005687;
 }
 
 #main {
@@ -42,15 +41,11 @@ body {
 	width: 940px;
 	height: 34px;
 	float: left;
-	font-family: "宋体";
 	text-align: center;
 	padding-left: 0px;
-	background: #13449d;
+	background: #c9eCED;
 }
 
-#menu a:hover {
-	background: blue;
-}
 
 #menu ul {
 	z-index: 100;
@@ -63,46 +58,25 @@ body {
 #menu ul li {
 	float: left;
 	position: relative;
-	display: inline;
 }
 
 /*Top level menu link items style*/
 #menu ul li a {
 	display: block;
-	height: 34px;
-	line-height: 34px;
-	padding: 0px 20px 0px 20px;
-	color: white;
+	height:34px; 
+	line-height:34px;
+	color:#005687;
 	text-decoration: none;
-	font-size: 14px;
-	border: 0px;
-}
-
-#menu ul ul li a {
-	height: 25px;
-	line-height: 25px;
-	font-size: 12px;
-}
-
-* html #menu ul li a {
-	/*IE6 hack to get sub menu links to behave correctly*/
-	display: inline-block;
-}
-
-#menu ul li a:link, #menu ul li a:visited {
-	color: white;
-}
-
-#menu ul li a.selected {
-	background: blue;
+	font-size: 16px;
+	padding: 0px 20px 0px 20px;
 }
 
 #menu ul li a:hover {
-	background: blue;
+	background: #19bCff;
 }
 
 /*1st sub level menu*/
-#menu ul li ul {
+#menu ul li ul {	
 	position: absolute;
 	left: 0;
 	display: none;
@@ -117,20 +91,24 @@ body {
 	display: list-item;
 	float: none;
 }
-
-.downarrowclass {
-	position: absolute;
-	top: 12px;
-	right: 7px;
+#menu ul li ul li:last-of-type a {
+	border-bottom:0px;
 }
 
 #menu ul li ul li a {
+	font-size:14px;
 	width: 90px; /*width of sub menus*/
 	padding: 0 8px 0 8px;
 	margin: 0;
 	border-top-width: 0;
 	border-bottom: 1px solid gray;
-	background: #13449d;
+	background: #c9eCED;
+}
+
+.downarrowclass {
+	position: absolute;
+	top: 12px;
+	right: 7px;
 }
 
 #slider_box {
@@ -161,7 +139,7 @@ body {
 	box-shadow: 0 0 3px rgba(0, 0, 0, 1);
 	color: rgba(255, 255, 255, 1);
 	cursor: pointer;
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: 500;
 	width: 32px;
 	height: 32px;
@@ -186,43 +164,48 @@ body {
 	right: 10px;
 }
 
-#two_box {
+#news_box {
 	float: left;
 	width: 940px;
-	height: 260px;
+	height: 240px;
 }
 
-#news_box {
-	width: 700px;
-	height: 250px;
+#news_content{
+	width: 940px;
+	height: 210px;
 	float: left;
+	background:#F0F8FF;
 }
 
-#news_li {
-	width: 442px;
+#news_header {
+	padding: 5px 5px 5px 5px;
+	margin: 0;
+	border-top: 2px solid #005687;
+	background:#c9eCED;
+	font-size:16px;
+}
+
+#news_header a {
+	color: #005687;
+	float:right;
+	padding-right:5px;
+}
+
+#news_list {
+	width: 680px;
 	height: 200px;
 	float: left;
 	padding: 6px 0 0 4px;
 }
-
-#news_box h2 {
-	padding: 5px 5px 5px 5px;
-	margin: 0;
-	border: 1px solid gray;
-background:#8080ff;
+#news_list div{
+	padding: 10px 0px 5px 10px;
+	border-bottom:1px solid #dfdfdf;
 }
-
-#news_box h2 span {
-	float: right;
-	height: 34px;
-	line-height: 34px;
-	width: 58px;
-	font-weight: 150;	
+#news_list div a{
+	color:black;
 }
-
-#news_box h2 span a {
-	font-size: 11px;
-	color: blue;
+#news_list div a:hover{
+	color:blue;
 }
 
 #news_pic {
@@ -282,40 +265,83 @@ background:#8080ff;
 	background: blue;
 }
 
-#t_1 {
-	width: 230px;
-	height: 250px;
-	float: right;
+#update_box{
+	float: left;
+	width: 940px;
+	height: 200px;
+	margin-top:10px;
+	border-top:2px solid gray;
+	background:#fafaff
+}
+#update_box a{
+	font-size:14px;
+	color:black;
+}
+#update_box a:hover{
+	color:blue;
 }
 
-#t_1 h2 span {
-	float: right;
-	height: 34px;
-	line-height: 34px;
-	width: 62px;
-	font-weight: 100;
+#course {
+	width: 470px;
+	height: 200px;
+	float: left;
+	padding-right:20px;
 }
 
-#t_1 h2 span a {
-	font-size: 11px;
-	color: blue;
+#course_header {
+	padding: 5px 5px 0px 5px;
+	margin: 0;
+	font-size:16px;
 }
 
-#t_1 ul {
-	padding: 10px 14px 0 16px;
+#course_header a {
+	font-size:16px;
+	float:right;
+	padding-right:5px;
 }
 
-#t_1 ul li {
-	padding: 0 0 8px 10px;
-	background: url(li.gif) no-repeat left 8px;
-	line-height: 1.5em;
+#course_content{
+	height:120px;
+	border-right:1px solid gray;
+}
+#course_content ul li{
+	padding-top:5px;
+}
+
+#research{
+	width: 450px;
+	height: 200px;
+	float: left;
+}
+
+#research_header {
+	padding: 5px 5px 0px 5px;
+	margin: 0;
+	font-size:16px;
+}
+
+#research_header a {
+	font-size:16px; 
+	float:right;
+	padding-right:5px;
+}
+
+#research_content{
+	height:120px;
+}
+#research_content ul li{
+	padding-top:5px;
 }
 
 #links {
+	color:black;
 	float: left;
 	width: 940px;
-	height: 43px;
-	background: url(links.gif) no-repeat left top;
+	height: 30px;
+	padding:10px 10px 0px 20px;
+	border: 1px solid gray;
+	font-size:14px;
+	background:#F0F8FF;
 }
 
 #footer {
