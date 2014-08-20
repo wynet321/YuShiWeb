@@ -30,7 +30,7 @@ body {
 }
 
 #logo {
-	width: 920px;
+	width: 940px;
 	height: 100px;
 	position: absolute;
 	top: 0px;
@@ -336,17 +336,23 @@ body {
 #links {
 	color:black;
 	float: left;
-	width: 940px;
+	width: 930px;
 	height: 30px;
-	padding:10px 10px 0px 20px;
+	padding:10px 0px 0px 10px;
 	border: 1px solid gray;
-	font-size:14px;
+	font-size:16px;
 	background:#F0F8FF;
+}
+#links a{
+	color:black;
+}
+#links a:hover{
+	color:blue;
 }
 
 #footer {
 	float: left;
 	width: 940px;
 	height: 130px;
-	color: #999;
+	color: black;
 }
