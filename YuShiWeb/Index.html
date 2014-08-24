@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<?
+$hit = get_hit ( "counter.txt" );
+?>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>中国北京培训中心</title>
 <meta charset="UTF-8">
 <link rel="shortcut icon"
-	href="http://cbir.med.tsinghua.edu.cn/images/favicon.ico">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<script type="text/javascript" src="js/script.js"></script>
+	href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body onload="sliderShow();">
+<div id="cover">
 	<div id="main">
 		<div id="header">
 			<div id="logo">
@@ -20,19 +24,21 @@
 			<ul>
 				<li><a href="#">网站首页</a></li>
 				<li style="line-height: 32px; font-size: 20px;">|</li>
-				<li style="z-index: 100;"><a href="Index.html" style="padding-right: 30px;"
-					onmouseover="menuShow('aboutus');" onmouseout="menuHide('aboutus');">关于我们<img
-						src="images/down.gif" class="downarrowclass"></a>
+				<li style="z-index: 100;"><a href="Index.html"
+					style="padding-right: 30px;" onmouseover="menuShow('aboutus');"
+					onmouseout="menuHide('aboutus');">关于我们<img src="images/down.gif"
+						class="downarrowclass"></a>
 					<ul id="aboutus" onmouseover="menuShow('aboutus');"
 						onmouseout="menuHide('aboutus');">
-						<li><a href="aboutus/organization.html">机构设置</a></li>
+						<li><a href="introduction/organization.html">机构设置</a></li>
 						<li><a href="aboutus/expertgroup.html">专家团队</a></li>
 						<li><a href="aboutus/purpose.html">发展宗旨</a></li>
 					</ul></li>
 				<li style="line-height: 32px; font-size: 20px;">|</li>
 				<li style="z-index: 99;"><a href="#" style="padding-right: 30px;"
-					onmouseover="menuShow('training');" onmouseout="menuHide('training');">教学培训<img
-						src="images/down.gif" class="downarrowclass"></a>
+					onmouseover="menuShow('training');"
+					onmouseout="menuHide('training');">教学培训<img src="images/down.gif"
+						class="downarrowclass"></a>
 					<ul id="training" onmouseover="menuShow('training');"
 						onmouseout="menuHide('training');">
 						<li><a href="training/plan.html">培训计划</a></li>
@@ -43,8 +49,8 @@
 				<li style="line-height: 32px; font-size: 20px;">|</li>
 				<li style="z-index: 98;"><a href="#" style="padding-right: 30px;"
 					onmouseover="menuShow('consultation');"
-					onmouseout="menuHide('consultation');">科研咨询<img src="images/down.gif"
-						class="downarrowclass"></a>
+					onmouseout="menuHide('consultation');">科研咨询<img
+						src="images/down.gif" class="downarrowclass"></a>
 					<ul id="consultation" onmouseover="menuShow('consultation');"
 						onmouseout="menuHide('consultation');">
 						<li><a href="consultation/consultationservice.html">咨询服务</a></li>
@@ -108,9 +114,9 @@
 							</div>
 						</div>
 						<div id="pic_mini">
-							<a id="pic_mini_1" onmouseover="picShow(1)" class="selected">&nbsp;</a> <a
-								id="pic_mini_2" onmouseover="picShow(2)">&nbsp;</a> <a id="pic_mini_3"
-								onmouseover="picShow(3)">&nbsp;</a>
+							<a id="pic_mini_1" onmouseover="picShow(1)" class="selected">&nbsp;</a>
+							<a id="pic_mini_2" onmouseover="picShow(2)">&nbsp;</a> <a
+								id="pic_mini_3" onmouseover="picShow(3)">&nbsp;</a>
 						</div>
 					</div>
 				</div>
@@ -155,17 +161,14 @@
 			<p>
 				COPYRIGHT 2010-2014&nbsp;&nbsp;<a href="http://www.abc.com/">http://www.abc.com/</a>&nbsp;&nbsp;-&nbsp;&nbsp;网站访问量：
 				<?
-				$hit = get_hit ( "counter.txt" );
-				// 调用刚才定义的函数处理counter.txt文档，并把结果赋值给hit变量。
 				echo "您是第<b>" . "$hit" . "</b>位访客！";
-				// 输出结果。PHP与ASP的区别在于：ASP的连字符是“&”，而Php的连字符是“.”。
-				?>
-			</p>
+				?></p>
 			<p>
 				联系地址：北京市西城区12号 邮编100000<br> 联系电话：010-12345678 传真：010-12345678<br>
 				电子邮箱：abc@abc.com
 			</p>
 		</div>
+	</div>
 	</div>
 </body>
 </html>
@@ -188,3 +191,4 @@ function get_hit($counter_file) {
 	}
 	return ($count);
 }
+?>

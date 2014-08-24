@@ -1,0 +1,21 @@
+<div id="links">
+	链接&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a
+		href="http://www.sina.com.cn" target="_blank">新浪网</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.sohu.com" target="_blank">搜狐网</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.google.com" target="_blank">谷歌</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.163.com" target="_blank">网易</a>
+</div>
+<div id="footer">
+	<p>
+		COPYRIGHT 2010-2014&nbsp;&nbsp;<a href="http://www.abc.com/">http://www.abc.com/</a>
+	
+	
+	<p>
+		联系地址：北京市西城区12号 邮编100000<br> 联系电话：010-12345678 传真：010-12345678<br>
+		电子邮箱：abc@abc.com
+	</p>
+</div>
+</div>
+</div>
+</body>
+</html>
