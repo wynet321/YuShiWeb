@@ -1,194 +1,173 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <?
+include "php/functions.inc";
 $hit = get_hit ( "counter.txt" );
 ?>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>中国北京培训中心</title>
 <meta charset="UTF-8">
-<link rel="shortcut icon"
-	href="/images/favicon.ico">
+<link rel="shortcut icon" href="/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body onload="sliderShow();">
-<div id="cover">
-	<div id="main">
-		<div id="header">
-			<div id="logo">
-				<img src="images/logo.gif">
+	<div id="cover">
+		<div id="main">
+			<div id="header">
+				<div id="logo">
+					<img src="images/logo.gif">
+				</div>
 			</div>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a href="#">网站首页</a></li>
-				<li style="line-height: 32px; font-size: 20px;">|</li>
-				<li style="z-index: 100;"><a href="Index.html"
-					style="padding-right: 30px;" onmouseover="menuShow('aboutus');"
-					onmouseout="menuHide('aboutus');">关于我们<img src="images/down.gif"
-						class="downarrowclass"></a>
-					<ul id="aboutus" onmouseover="menuShow('aboutus');"
-						onmouseout="menuHide('aboutus');">
-						<li><a href="introduction/organization.html">机构设置</a></li>
-						<li><a href="aboutus/expertgroup.html">专家团队</a></li>
-						<li><a href="aboutus/purpose.html">发展宗旨</a></li>
-					</ul></li>
-				<li style="line-height: 32px; font-size: 20px;">|</li>
-				<li style="z-index: 99;"><a href="#" style="padding-right: 30px;"
-					onmouseover="menuShow('training');"
-					onmouseout="menuHide('training');">教学培训<img src="images/down.gif"
-						class="downarrowclass"></a>
-					<ul id="training" onmouseover="menuShow('training');"
-						onmouseout="menuHide('training');">
-						<li><a href="training/plan.html">培训计划</a></li>
-						<li><a href="training/news.html">开班快讯</a></li>
-						<li><a href="training/result.html">培训成果</a></li>
-						<li><a href="training/product.html">培训产品</a></li>
-					</ul></li>
-				<li style="line-height: 32px; font-size: 20px;">|</li>
-				<li style="z-index: 98;"><a href="#" style="padding-right: 30px;"
-					onmouseover="menuShow('consultation');"
-					onmouseout="menuHide('consultation');">科研咨询<img
-						src="images/down.gif" class="downarrowclass"></a>
-					<ul id="consultation" onmouseover="menuShow('consultation');"
-						onmouseout="menuHide('consultation');">
-						<li><a href="consultation/consultationservice.html">咨询服务</a></li>
-						<li><a href="consultation/projectinfo.html">项目动态</a></li>
-						<li><a href="consultation/researchresult.html">科研成果</a></li>
-						<li><a href="consultation/academicalview.html">学术观点</a></li>
-						<li><a href="consultation/infocenter.html">资料库</a></li>
-					</ul></li>
-				<li style="line-height: 32px; font-size: 20px;">|</li>
-				<li style="z-index: 97;"><a href="/contactinfo.html"
-					style="padding-right: 30px;">联系我们</a></li>
-			</ul>
-		</div>
-		<div id="slider_box">
-			<button id="prev">&laquo;</button>
-			<button id="next">&raquo;</button>
-			<div id="slider">
+			<div id="menu">
 				<ul>
-					<li><img src="images/banner1.gif" width="940" height="320" alt="1"
-						title="1"></li>
-					<li><img src="images/banner2.gif" width="940" height="320" alt="2"
-						title="2"></li>
-					<li><img src="images/banner3.gif" width="940" height="320" alt="2"
-						title="2"></li>
+					<li><a href="#">网站首页</a></li>
+					<li style="line-height: 32px; font-size: 20px;">|</li>
+					<li style="z-index: 100;"><a href="Index.html"
+						style="padding-right: 30px;" onmouseover="menuShow('aboutus');"
+						onmouseout="menuHide('aboutus');">关于我们<img src="images/down.gif"
+							class="downarrowclass"></a>
+						<ul id="aboutus" onmouseover="menuShow('aboutus');"
+							onmouseout="menuHide('aboutus');">
+							<li><a href="introduction/organization.html">机构设置</a></li>
+							<li><a href="aboutus/expertgroup.html">专家团队</a></li>
+							<li><a href="aboutus/purpose.html">发展宗旨</a></li>
+						</ul></li>
+					<li style="line-height: 32px; font-size: 20px;">|</li>
+					<li style="z-index: 99;"><a href="#" style="padding-right: 30px;"
+						onmouseover="menuShow('training');"
+						onmouseout="menuHide('training');">教学培训<img src="images/down.gif"
+							class="downarrowclass"></a>
+						<ul id="training" onmouseover="menuShow('training');"
+							onmouseout="menuHide('training');">
+							<li><a href="training/plan.html">培训计划</a></li>
+							<li><a href="training/news.html">开班快讯</a></li>
+							<li><a href="training/result.html">培训成果</a></li>
+							<li><a href="training/product.html">培训产品</a></li>
+						</ul></li>
+					<li style="line-height: 32px; font-size: 20px;">|</li>
+					<li style="z-index: 98;"><a href="#" style="padding-right: 30px;"
+						onmouseover="menuShow('consultation');"
+						onmouseout="menuHide('consultation');">科研咨询<img
+							src="images/down.gif" class="downarrowclass"></a>
+						<ul id="consultation" onmouseover="menuShow('consultation');"
+							onmouseout="menuHide('consultation');">
+							<li><a href="consultation/consultationservice.html">咨询服务</a></li>
+							<li><a href="consultation/projectinfo.html">项目动态</a></li>
+							<li><a href="consultation/researchresult.html">科研成果</a></li>
+							<li><a href="consultation/academicalview.html">学术观点</a></li>
+							<li><a href="consultation/infocenter.html">资料库</a></li>
+						</ul></li>
+					<li style="line-height: 32px; font-size: 20px;">|</li>
+					<li style="z-index: 97;"><a href="/contactinfo.html"
+						style="padding-right: 30px;">联系我们</a></li>
 				</ul>
 			</div>
-		</div>
-		<div id="news_box">
-			<div>
-				<div id="news_header">
-					&nbsp;&nbsp;新闻快讯<a href="/news/latest/">更多...</a>
-				</div>
-				<div id="news_content">
-					<div id="news_list">
-						<div>
-							<a href="/news/latest/90.html">2014.08.24&nbsp;-&nbsp;这里是新闻一链接。。。。。。。。。</a>
-						</div>
-						<div>
-							<a href="/news/latest/88.html">2014.08.24&nbsp;-&nbsp;这里是新闻二链接。。。。。。。。。</a>
-						</div>
-						<div>
-							<a href="/news/latest/87.html">2014.08.24&nbsp;-&nbsp;这里是新闻三链接。。。。。。。。。</a>
-						</div>
-						<div>
-							<a href="/news/latest/85.html">2014.08.24&nbsp;-&nbsp;这里是新闻四链接。。。。。。。。。</a>
-						</div>
-						<div>
-							<a href="/news/latest/81.html">2014.08.24&nbsp;-&nbsp;这里是新闻五链接。。。。。。。。。</a>
-						</div>
-					</div>
-					<div id="news_pic">
-						<div id="pic_content">
-							<div id="pic_content_1" style="display: block;">
-								<a href="list1.html" title="list1"><img src="images/list1.gif"></a>
-							</div>
-							<div id="pic_content_2" style="display: none;">
-								<a href="list2.html" title="list2"><img src="images/list2.gif"></a>
-							</div>
-							<div id="pic_content_3" style="display: none;">
-								<a href="list3.html" title="list3"><img src="images/list3.gif"></a>
-							</div>
-						</div>
-						<div id="pic_mini">
-							<a id="pic_mini_1" onmouseover="picShow(1)" class="selected">&nbsp;</a>
-							<a id="pic_mini_2" onmouseover="picShow(2)">&nbsp;</a> <a
-								id="pic_mini_3" onmouseover="picShow(3)">&nbsp;</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="update_box">
-			<div id="course">
-				<div id="course_header">
-					&nbsp;&nbsp;培训动态<a href="/update/courses/">更多...</a>
-				</div>
-				<div id="course_content">
+			<div id="slider_box">
+				<button id="prev">&laquo;</button>
+				<button id="next">&raquo;</button>
+				<div id="slider">
 					<ul>
-						<li><a href="/update/courses/93.html">2014.07.21&nbsp;-&nbsp;2014培训课程系列四</a></li>
-						<li><a href="/update/courses/92.html">2014.07.21&nbsp;-&nbsp;2014培训课程系列三</a></li>
-						<li><a href="/update/courses/91.html">2014.07.21&nbsp;-&nbsp;2014培训课程系列二</a></li>
-						<li><a href="/update/courses/86.html">2014.07.21&nbsp;-&nbsp;2014培训课程系列一</a></li>
+						<li><img src="images/banner1.gif" width="940" height="320" alt="1"
+							title="1"></li>
+						<li><img src="images/banner2.gif" width="940" height="320" alt="2"
+							title="2"></li>
+						<li><img src="images/banner3.gif" width="940" height="320" alt="2"
+							title="2"></li>
 					</ul>
 				</div>
 			</div>
-			<div id="research">
-				<div id="research_header">
-					&nbsp;&nbsp;科研动态<a href="/update/research/">更多...</a>
-				</div>
-				<div id="research_content">
-					<ul>
-						<li><a href="/update/research/93.html">2014.07.21&nbsp;-&nbsp;2014科研动态四</a></li>
-						<li><a href="/update/research/92.html">2014.07.21&nbsp;-&nbsp;2014科研动态三</a></li>
-						<li><a href="/update/research/91.html">2014.07.21&nbsp;-&nbsp;2014科研动态二</a></li>
-						<li><a href="/update/research/86.html">2014.07.21&nbsp;-&nbsp;2014科研动态一</a></li>
-					</ul>
+			<div id="news_box">
+				<div>
+					<div id="news_header">
+						&nbsp;&nbsp;新闻快讯<a href="/news/latest/">更多...</a>
+					</div>
+					<div id="news_content">
+						<div id="news_list">
+							<div>
+								<a href="/news/latest/90.html">2014.08.24&nbsp;-&nbsp;这里是新闻一链接。。。。。。。。。</a>
+							</div>
+							<div>
+								<a href="/news/latest/88.html">2014.08.24&nbsp;-&nbsp;这里是新闻二链接。。。。。。。。。</a>
+							</div>
+							<div>
+								<a href="/news/latest/87.html">2014.08.24&nbsp;-&nbsp;这里是新闻三链接。。。。。。。。。</a>
+							</div>
+							<div>
+								<a href="/news/latest/85.html">2014.08.24&nbsp;-&nbsp;这里是新闻四链接。。。。。。。。。</a>
+							</div>
+							<div>
+								<a href="/news/latest/81.html">2014.08.24&nbsp;-&nbsp;这里是新闻五链接。。。。。。。。。</a>
+							</div>
+						</div>
+						<div id="news_pic">
+							<div id="pic_content">
+								<div id="pic_content_1" style="display: block;">
+									<a href="list1.html" title="list1"><img src="images/list1.gif"></a>
+								</div>
+								<div id="pic_content_2" style="display: none;">
+									<a href="list2.html" title="list2"><img src="images/list2.gif"></a>
+								</div>
+								<div id="pic_content_3" style="display: none;">
+									<a href="list3.html" title="list3"><img src="images/list3.gif"></a>
+								</div>
+							</div>
+							<div id="pic_mini">
+								<a id="pic_mini_1" onmouseover="picShow(1)" class="selected">&nbsp;</a>
+								<a id="pic_mini_2" onmouseover="picShow(2)">&nbsp;</a> <a
+									id="pic_mini_3" onmouseover="picShow(3)">&nbsp;</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+			<div id="update_box">
+				<div id="course">
+					<div id="course_header">
+						&nbsp;&nbsp;培训动态<a href="/update/courses/">更多...</a>
+					</div>
+					<div id="course_content">
+						<ul>
+							<li><a href="/update/courses/93.html">2014.07.21&nbsp;-&nbsp;2014培训课程系列四</a></li>
+							<li><a href="/update/courses/92.html">2014.07.21&nbsp;-&nbsp;2014培训课程系列三</a></li>
+							<li><a href="/update/courses/91.html">2014.07.21&nbsp;-&nbsp;2014培训课程系列二</a></li>
+							<li><a href="/update/courses/86.html">2014.07.21&nbsp;-&nbsp;2014培训课程系列一</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="research">
+					<div id="research_header">
+						&nbsp;&nbsp;科研动态<a href="/update/research/">更多...</a>
+					</div>
+					<div id="research_content">
+						<ul>
+							<li><a href="/update/research/93.html">2014.07.21&nbsp;-&nbsp;2014科研动态四</a></li>
+							<li><a href="/update/research/92.html">2014.07.21&nbsp;-&nbsp;2014科研动态三</a></li>
+							<li><a href="/update/research/91.html">2014.07.21&nbsp;-&nbsp;2014科研动态二</a></li>
+							<li><a href="/update/research/86.html">2014.07.21&nbsp;-&nbsp;2014科研动态一</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="links">
+				链接&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a
+					href="http://www.sina.com.cn" target="_blank">新浪网</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="http://www.sohu.com" target="_blank">搜狐网</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="http://www.google.com" target="_blank">谷歌</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="http://www.163.com" target="_blank">网易</a>
+			</div>
+			<div id="footer">
+				<p>
+					COPYRIGHT 2010-2014&nbsp;&nbsp;<a href="http://www.abc.com/">http://www.abc.com/</a>&nbsp;&nbsp;-&nbsp;&nbsp;网站访问量：
+					您是第<b><?echo $hit;?></b>位访客！
+				</p>
+				<p>
+					联系地址：北京市西城区12号 邮编100000<br> 联系电话：010-12345678 传真：010-12345678<br>
+					电子邮箱：abc@abc.com
+				</p>
+			</div>
 		</div>
-		<div id="links">
-			链接&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a
-				href="http://www.sina.com.cn" target="_blank">新浪网</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="http://www.sohu.com" target="_blank">搜狐网</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="http://www.google.com" target="_blank">谷歌</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="http://www.163.com" target="_blank">网易</a>
-		</div>
-		<div id="footer">
-			<p>
-				COPYRIGHT 2010-2014&nbsp;&nbsp;<a href="http://www.abc.com/">http://www.abc.com/</a>&nbsp;&nbsp;-&nbsp;&nbsp;网站访问量：
-				<?
-				echo "您是第<b>" . "$hit" . "</b>位访客！";
-				?></p>
-			<p>
-				联系地址：北京市西城区12号 邮编100000<br> 联系电话：010-12345678 传真：010-12345678<br>
-				电子邮箱：abc@abc.com
-			</p>
-		</div>
-	</div>
 	</div>
 </body>
 </html>
-<?
-function get_hit($counter_file) {
-	if (! isset ( $_COOKIE ['count'] )) {
-		if (file_exists ( $counter_file )) {
-			$fp = fopen ( $counter_file, "rw" );
-			$count = 1 + fgets ( $fp, 20 );
-			fputs ( $fp, $count );
-			fclose ( $fp );
-		} else {
-			$fp = fopen ( $counter_file, "w" );
-			fputs ( $fp, $count );
-			fclose ( $fp );
-		}
-		setcookie ( 'count', $count, time () + 300 );
-	} else {
-		$count = $_COOKIE ['count'];
-	}
-	return ($count);
-}
-?>

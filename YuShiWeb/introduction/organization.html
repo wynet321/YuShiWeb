@@ -1,21 +1,17 @@
-<?php include "../top.inc";?>
-<link rel="stylesheet" type="text/css" href="/css/style_child.css">
-<div id="location">
-	<span>当前位置：</span>&nbsp;&nbsp;<a href="/index.html">网站首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a
-		href="/introduction/organization.html">机构设置</a>
-</div>
+<?php
+include "../top.html";
+get_div_location ( "/introduction/organization.html", "机构设置" );
+?>
+
 <div id="content">
 	<h1>机构设置</h1>
 	<h2>发布日期：2014-05-20 11:12:42</h2>
 	<div id="post">
 		<pre><? include "organization.txt";?></pre>
 		<p style="text-align: center;">
-			<img width="480" height="300"
-				src="">
+			<img width="480" height="300" src="">
 		</p>
 	</div>
 </div>
-<?
-include "../bottom.inc";
-?>
+<?include "../bottom.html";?>
 		
