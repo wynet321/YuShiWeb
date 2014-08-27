@@ -1,5 +1,5 @@
 <?
-function get_hit($counter_file) {
+function getHit($counter_file) {
 	if (! isset ( $_COOKIE ['count'] )) {
 		if (file_exists ( $counter_file )) {
 			$fp = fopen ( $counter_file, "rw" );
@@ -17,9 +17,26 @@ function get_hit($counter_file) {
 	}
 	return ($count);
 }
-function get_div_location($url, $name) {
+function getDivLocation($url, $name) {
 	echo "<div id=\"location\">
 	<span>当前位置：</span>&nbsp;&nbsp;<a href=\"/index.html\">网站首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a
 	href=\"" . $url . "\">" . $name . "</a>
 	</div>";
+}
+function getNewsArray($folder, $seqid) {
+	if (file_exists ( $folder . $seqid . ".txt" )) {
+		$fp = fopen ( $folder . $seqid . ".txt", "r" );
+		$time = fgets ( $fp );
+		$title = fgets ( $fp );
+		while ( ! feof ( $fp ) ) {
+			$content = $content . fgets ( $fp ) . "<br>";
+		}
+		$array_result = array (
+				"title" => $title,
+				"time" => $time,
+				"content" => $content 
+		);
+		return $array_result;
+	} else
+		echo "No result!";
 }
