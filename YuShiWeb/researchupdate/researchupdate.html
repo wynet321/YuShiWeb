@@ -1,0 +1,15 @@
+<?php
+include "../top.html";
+getDivLocation ( "/researchupdate/index.html", "科技动态" );
+$newsArray = getNewsArray ( "../courseupdate/", $_REQUEST ["seqId"] );
+?>
+<div id="content">
+	<h1><?php echo $newsArray["title"];?></h1>
+	<h2><?php echo $newsArray["time"];?></h2>
+	<div id="post"><?php echo $newsArray["content"];?></div>
+	<div style="height: 60px;">&nbsp;</div>
+</div>
+<?php
+include "../bottom.html";
+echo "<script type='text/javascript'>document.getElementById('cover').style.height=document.getElementById('content').offsetHeight+360+'px';</script>";
+?>

@@ -1,9 +1,5 @@
 @CHARSET "UTF-8";
 
-#cover{
-	height:1155px;
-}
-
 #location {
 float: left;
 width: 940px;
@@ -17,7 +13,6 @@ font-size:12px;
 #content {
 float: left;
 width: 880px;
-height: 760px;
 padding: 5px 30px;
 font-size:11px;
 }

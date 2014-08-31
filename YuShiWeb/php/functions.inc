@@ -23,18 +23,19 @@ function getDivLocation($url, $name) {
 	href=\"" . $url . "\">" . $name . "</a>
 	</div>";
 }
-function getNewsArray($folder, $seqid) {
-	if (file_exists ( $folder . $seqid . ".txt" )) {
-		$fp = fopen ( $folder . $seqid . ".txt", "r" );
+function getNewsArray($folder, $seqId) {
+	if ($seqId!=null && $seqId>0 && $seqId<6 && file_exists ( $folder . $seqId . ".txt" )) {
+		$fp = fopen ( $folder . $seqId . ".txt", "r" );
 		$time = fgets ( $fp );
 		$title = fgets ( $fp );
+		$content = "";
 		while ( ! feof ( $fp ) ) {
-			$content = $content . fgets ( $fp ) . "<br>";
+			$content = $content . fgets ( $fp ) ."<br>";
 		}
 		$array_result = array (
 				"title" => $title,
 				"time" => $time,
-				"content" => $content 
+				"content" => $content
 		);
 		return $array_result;
 	} else

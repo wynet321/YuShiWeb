@@ -24,8 +24,8 @@ $hit = getHit ( "counter.txt" );
 				<ul>
 					<li><a href="/index.html">网站首页</a></li>
 					<li style="line-height: 32px; font-size: 20px;">|</li>
-					<li style="z-index: 100;"><a href="#"
-						style="padding-right: 30px;" onmouseover="menuShow('aboutus');"
+					<li style="z-index: 100;"><a href="#" style="padding-right: 30px;"
+						onmouseover="menuShow('aboutus');"
 						onmouseout="menuHide('aboutus');">关于我们<img src="/images/down.gif"
 							class="downarrowclass"></a>
 						<ul id="aboutus" onmouseover="menuShow('aboutus');"
@@ -85,21 +85,14 @@ $hit = getHit ( "counter.txt" );
 					</div>
 					<div id="news_content">
 						<div id="news_list">
-							<div>
-								<a href="/news/1.html"><?php $newsArray=getNewsArray("news/", 1); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a>
-							</div>
-							<div>
-								<a href="/news/2.html"><?php $newsArray=getNewsArray("news/", 2); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a>
-							</div>
-							<div>
-								<a href="/news/3.html"><?php $newsArray=getNewsArray("news/", 3); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a>
-							</div>
-							<div>
-								<a href="/news/4.html"><?php $newsArray=getNewsArray("news/", 4); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a>
-							</div>
-							<div>
-								<a href="/news/5.html"><?php $newsArray=getNewsArray("news/", 5); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a>
-							</div>
+						<?php
+						for($i = 1; $i < 6; $i ++) {
+							$newsArray = getNewsArray ( "news/", $i );
+							$tip = (strlen ( $newsArray ["title"] )) > 110 ? $newsArray ["title"] : "";
+							$title = (strlen ( $newsArray ["title"] ) < 110 ? $newsArray ["title"] : substr ( $newsArray ["title"], 0, 108 ) . "...");
+							echo "<div><a href=\"/news/news.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></div>";
+						}
+						?>
 						</div>
 						<div id="news_pic">
 							<div id="pic_content">
@@ -129,11 +122,15 @@ $hit = getHit ( "counter.txt" );
 					</div>
 					<div id="course_content">
 						<ul>
-							<li><a href="/courseupdate/1.html"><?php $newsArray=getNewsArray("courseupdate/", 1); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a></li>
-							<li><a href="/courseupdate/2.html"><?php $newsArray=getNewsArray("courseupdate/", 2); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a></li>
-							<li><a href="/courseupdate/3.html"><?php $newsArray=getNewsArray("courseupdate/", 3); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a></li>
-							<li><a href="/courseupdate/4.html"><?php $newsArray=getNewsArray("courseupdate/", 4); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a></li>
-						</ul>
+						<?php
+						for($i = 1; $i < 5; $i ++) {
+							$newsArray = getNewsArray ( "courseupdate/", $i );
+							$tip = (strlen ( $newsArray ["title"] )) > 56 ? $newsArray ["title"] : "";
+							$title = (strlen ( $newsArray ["title"] ) < 56 ? $newsArray ["title"] : substr ( $newsArray ["title"], 0, 54 ) . "...");
+							echo "<li><a href=\"/courseupdate/courseupdate.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></li>";
+						}
+						?>
+							</ul>
 					</div>
 				</div>
 				<div id="research">
@@ -142,10 +139,14 @@ $hit = getHit ( "counter.txt" );
 					</div>
 					<div id="research_content">
 						<ul>
-							<li><a href="/researchupdate/1.html"><?php $newsArray=getNewsArray("researchupdate/", 1); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a></li>
-							<li><a href="/researchupdate/2.html"><?php $newsArray=getNewsArray("researchupdate/", 2); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a></li>
-							<li><a href="/researchupdate/3.html"><?php $newsArray=getNewsArray("researchupdate/", 3); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a></li>
-							<li><a href="/researchupdate/4.html"><?php $newsArray=getNewsArray("researchupdate/", 4); echo $newsArray["time"]."&nbsp;-&nbsp;".$newsArray["title"];?></a></li>
+						<?php
+						for($i = 1; $i < 5; $i ++) {
+							$newsArray = getNewsArray ( "researchupdate/", $i );
+							$tip = (strlen ( $newsArray ["title"] )) > 56 ? $newsArray ["title"] : "";
+							$title = (strlen ( $newsArray ["title"] ) < 56 ? $newsArray ["title"] : substr ( $newsArray ["title"], 0, 54 ) . "...");
+							echo "<li><a href=\"/researchupdate/researchupdate.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></li>";
+						}
+						?>
 						</ul>
 					</div>
 				</div>
