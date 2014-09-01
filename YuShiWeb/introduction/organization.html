@@ -4,12 +4,11 @@ getDivLocation ( "/introduction/organization.html", "机构设置" );
 ?>
 <div id="content">
 	<h1>机构设置</h1>
-	<div id="post">
-		<pre><? include "organization.txt";?></pre>
-		<!-- <p style="text-align: center;">
-			<img width="480" height="300" src="">
-		</p> -->
-	</div>
+	<div id="post">organization chart</div>
+	<div style="height: 60px;">&nbsp;</div>
 </div>
-<?include "../bottom.html";?>
+<?php
+include "../bottom.html";
+echo "<script type='text/javascript'>document.getElementById('cover').style.height=document.getElementById('content').offsetHeight+360+'px';</script>";
+?>
 		

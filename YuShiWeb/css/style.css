@@ -56,6 +56,8 @@ body {
 	text-align: center;
 	padding-left: 0px;
 	background: #c9eCED;
+	border-top: 1px solid #000;
+	border-bottom:1px solid #000;
 }
 
 #menu ul {
