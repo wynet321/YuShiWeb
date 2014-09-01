@@ -33,12 +33,12 @@ function getNewsArray($folder, $seqId) {
 		while ( ! feof ( $fp ) ) {
 			$content = $content . fgets ( $fp ) . "<br>";
 		}
-		$array_result = array (
+		$arrayResult = array (
 				"title" => $title,
 				"time" => $time,
 				"content" => $content 
 		);
-		return $array_result;
+		return $arrayResult;
 	} else
 		echo "No result!";
 }

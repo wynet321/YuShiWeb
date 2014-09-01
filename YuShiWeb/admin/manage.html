@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <?php
-if ($_FILES["file"]["error"] > 0)
-  {
-  echo "Error: " . $_FILES["file"]["error"] . "<br />";
-  }
-else
-  {
-  echo "Upload: " . $_FILES["file"]["name"] . "<br />";
-  echo "Type: " . $_FILES["file"]["type"] . "<br />";
-  echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
-  echo "Stored in: " . $_FILES["file"]["tmp_name"];
-  }
+include "../php/functions.inc";
+for($i = 1; $i < 21; $i ++) {
+	if (! file_exists ( "../news/" . $i . ".txt" )) {
+		file_put_contents ( "../news/" . $i . ".txt", "" );
+		$newsContentArray [$i] = "";
+	} else {
+		$newsContentArray [$i] = file_get_contents ( "../news/" . $i . ".txt" );
+	}
+}
 ?>
 <html>
 <head>
@@ -21,17 +19,16 @@ else
 <script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body>
-<form action="manage.html" method="post" enctype="multipart/form-data">
-<label for="file">Filename:</label>
-<input type="file" name="file" id="file" /> 
-<input type="submit" name="submit" value="Submit" />
-</form>
-<select id="bca" name="abc" multiple="true">
-                     <option value="a">111111</option>
-                     <option value="b" selected>222222</option>
-                     <option value="c">333333</option>
-                   </select>
-
-
+	<form>
+		<label>Select:</label> <select id="news" style="width: 100px">
+        	<?php
+									for($i = 1; $i < 21; $i ++) {
+										echo "<option value='" . $i . "'>新闻" . $i . "</option>";
+									}
+									?>
+		</select> <input type="button" id="add" value="新加入" /> <label>Content:</label>
+		<textarea style="width: 600px; height: 300px;"><?php echo $newsContentArray[1];?></textarea>
+		<input type="button" id="update" value="更新" onclick="var file=FileWriter();" />
+	</form>
 </body>
 </html>
