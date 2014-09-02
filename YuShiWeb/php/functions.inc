@@ -2,10 +2,10 @@
 function getHit($counter_file) {
 	if (! isset ( $_COOKIE ['count'] )) {
 		if (file_exists ( $counter_file )) {
-			$fp = fopen ( $counter_file, "r+" );
+			$fp = fopen ( $counter_file, "r" );
 			$count = fgets ( $fp ) + 1;
-			fputs ( $fp, $count );
 			fclose ( $fp );
+			file_put_contents($counter_file, $count);
 		} else {
 			$count = 1;
 			$fp = fopen ( $counter_file, "w" );
