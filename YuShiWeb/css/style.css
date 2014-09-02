@@ -302,7 +302,7 @@ body {
 	color: #042c53;
 }
 
-#course {
+#training {
 	width: 460px;
 	float: left;
 	/*border-right: 1px solid gray;*/
@@ -312,28 +312,28 @@ body {
 	-webkit-box-shadow: 1px 2px 3px #333;
 }
 
-#course_header {
+#training_header {
 	padding: 5px 5px 0px 5px;
 	margin: 0;
 	font-size: 16px;
 	background: #c9eCED;
 }
 
-#course_header a {
+#training_header a {
 	font-size: 16px;
 	float: right;
 	padding-right: 5px;
 }
 
-#course_header a:hover {
+#training_header a:hover {
 	color: #042c53;
 }
 
-#course_content {
+#training_content {
 	height: 120px;
 }
 
-#course_content ul li {
+#training_content ul li {
 	padding-top: 5px;
 }
 

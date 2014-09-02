@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <?php
 include "../php/functions.inc";
-for($i = 1; $i < 21; $i ++) {
-	if (! file_exists ( "../news/" . $i . ".txt" )) {
-		file_put_contents ( "../news/" . $i . ".txt", "" );
-		$newsContentArray [$i] = "";
-	} else {
-		$newsContentArray [$i] = file_get_contents ( "../news/" . $i . ".txt" );
-	}
-}
+$newsTitleArray=getTitleArray("news");
+$trainingTitleArray=getTitleArray("trainingupdate");
+$researchTitleArray=getTitleArray("researchupdate");
 ?>
 <html>
 <head>
@@ -18,17 +13,67 @@ for($i = 1; $i < 21; $i ++) {
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <script type="text/javascript" src="/js/script.js"></script>
 </head>
-<body>
-	<form>
-		<label>Select:</label> <select id="news" style="width: 100px">
+<body
+	style="text-align: center; height: 600px; width: 950px; border: 1px solid #000;">
+	<div style="height: 60px; text-align: center;">
+		<H1>更新管理</H1>
+	</div>
+	<div style="text-align: left; padding-left: 30px;">
+		<form action="update.php?category=news" method="post"
+			enctype="multipart/form-data"
+			onsubmit="if(document.getElementById('newsfile').value=='') {alert ('请先选取文件!');return false;}">
+			<label>选择新闻快讯:</label> <select name="list" style="width: 700px">
         	<?php
 									for($i = 1; $i < 21; $i ++) {
-										echo "<option value='" . $i . "'>新闻" . $i . "</option>";
+										echo "<option value='" . $i . "'>新闻快讯" . $i . " - " . $newsTitleArray [$i] . "</option>";
 									}
 									?>
-		</select> <input type="button" id="add" value="新加入" /> <label>Content:</label>
-		<textarea style="width: 600px; height: 300px;"><?php echo $newsContentArray[1];?></textarea>
-		<input type="button" id="update" value="更新" onclick="var file=FileWriter();" />
-	</form>
+		</select> <input type="button" name="add" value="加入新闻"
+				onclick="window.location.href='update.php?category=news&add=true';" />
+			<br> <br> <label>更新新闻快讯:</label> <input type="file" id="newsfile"
+				name="newsfile" style="width: 300px;" /> <input type="submit"
+				name="submit" value="更新" />
+		</form>
+	</div>
+	<div style="height: 50px; border-bottom:1px solid #000;">&nbsp;</div>
+	<div style="height: 50px;">&nbsp;</div>
+	
+	<div style="text-align: left; padding-left: 30px;">
+		<form action="update.php?category=trainingupdate" method="post"
+			enctype="multipart/form-data"
+			onsubmit="if(document.getElementById('trainingupdatefile').value=='') {alert ('请先选取文件!');return false;}">
+			<label>选择培训动态:</label> <select name="list" style="width: 700px">
+        	<?php
+									for($i = 1; $i < 21; $i ++) {
+										echo "<option value='" . $i . "'>培训动态" . $i . " - " . $trainingTitleArray [$i] . "</option>";
+									}
+									?>
+		</select> <input type="button" name="add" value="加入培训动态"
+				onclick="window.location.href='update.php?category=trainingupdate&add=true';" />
+			<br> <br> <label>更新培训动态:</label> <input type="file" id="trainingupdatefile"
+				name="trainingupdatefile" style="width: 300px;" /> <input type="submit"
+				name="submit" value="更新" />
+		</form>
+	</div>
+	<div style="height: 50px; border-bottom:1px solid #000;">&nbsp;</div>
+	<div style="height: 50px;">&nbsp;</div>
+	
+	<div style="text-align: left; padding-left: 30px;">
+		<form action="update.php?category=researchupdate" method="post"
+			enctype="multipart/form-data"
+			onsubmit="if(document.getElementById('researchupdatefile').value=='') {alert ('请先选取文件!');return false;}">
+			<label>选择科研动态:</label> <select name="list" style="width: 700px">
+        	<?php
+									for($i = 1; $i < 21; $i ++) {
+										echo "<option value='" . $i . "'>科研动态" . $i . " - " . $researchTitleArray [$i] . "</option>";
+									}
+									?>
+		</select> <input type="button" name="add" value="加入培训动态"
+				onclick="window.location.href='update.php?category=researchupdate&add=true';" />
+			<br> <br> <label>更新科研动态:</label> <input type="file" id="researchupdatefile"
+				name="researchupdatefile" style="width: 300px;" /> <input type="submit"
+				name="submit" value="更新" />
+		</form>
+	</div>
 </body>
 </html>

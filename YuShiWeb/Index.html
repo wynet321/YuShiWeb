@@ -115,18 +115,18 @@ $hit = getHit ( "counter.txt" );
 				</div>
 			</div>
 			<div id="update_box">
-				<div id="course">
-					<div id="course_header">
-						&nbsp;&nbsp;培训动态<a href="/courseupdate/index.html">更多...</a>
+				<div id="training">
+					<div id="training_header">
+						&nbsp;&nbsp;培训动态<a href="/trainingupdate/index.html">更多...</a>
 					</div>
-					<div id="course_content">
+					<div id="training_content">
 						<ul>
 						<?php
 						for($i = 1; $i < 5; $i ++) {
-							$newsArray = getNewsArray ( "courseupdate/", $i );
+							$newsArray = getNewsArray ( "trainingupdate/", $i );
 							$tip = (strlen ( $newsArray ["title"] )) > 56 ? $newsArray ["title"] : "";
 							$title = (strlen ( $newsArray ["title"] ) < 56 ? $newsArray ["title"] : substr ( $newsArray ["title"], 0, 54 ) . "...");
-							echo "<li><a href=\"/courseupdate/courseupdate.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></li>";
+							echo "<li><a href=\"/trainingupdate/trainingupdate.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></li>";
 						}
 						?>
 							</ul>

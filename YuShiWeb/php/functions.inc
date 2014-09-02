@@ -27,11 +27,11 @@ function getDivLocation($url, $name) {
 function getNewsArray($folder, $seqId) {
 	if ($seqId != null && $seqId > 0 && $seqId < 6 && file_exists ( $folder . $seqId . ".txt" )) {
 		$fp = fopen ( $folder . $seqId . ".txt", "r" );
-		$time = fgets ( $fp );
-		$title = fgets ( $fp );
+		$time = iconv ( "GBK", "UTF-8", fgets ( $fp ) );
+		$title = iconv ( "GBK", "UTF-8", fgets ( $fp ) );
 		$content = "";
 		while ( ! feof ( $fp ) ) {
-			$content = $content . fgets ( $fp ) . "<br>";
+			$content = $content . iconv ( "GBK", "UTF-8", fgets ( $fp ) ) . "<br>";
 		}
 		$arrayResult = array (
 				"title" => $title,
@@ -41,4 +41,18 @@ function getNewsArray($folder, $seqId) {
 		return $arrayResult;
 	} else
 		echo "No result!";
+}
+function getTitleArray($category) {
+	for($i = 1; $i < 21; $i ++) {
+		if (! file_exists ( "../" . $category . "/" . $i . ".txt" )) {
+			file_put_contents ( "../" . $category . "/" . $i . ".txt", "" );
+			$newsTitleArray [$i] = "";
+		} else {
+			$fp = fopen ( "../" . $category . "/" . $i . ".txt", "r" );
+			fgets ( $fp );
+			$newsTitleArray [$i] = iconv ( "GBK", "UTF-8", fgets ( $fp ) );
+			fclose ( $fp );
+		}
+	}
+	return $newsTitleArray;
 }
