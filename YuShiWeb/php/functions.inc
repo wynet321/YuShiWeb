@@ -25,7 +25,7 @@ function getDivLocation($url, $name) {
 	</div>";
 }
 function getNewsArray($folder, $seqId) {
-	if ($seqId != null && $seqId > 0 && $seqId < 6 && file_exists ( $folder . $seqId . ".txt" )) {
+	if ($seqId != null && file_exists ( $folder . $seqId . ".txt" )) {
 		$fp = fopen ( $folder . $seqId . ".txt", "r" );
 		$time = iconv ( "GBK", "UTF-8", fgets ( $fp ) );
 		$title = iconv ( "GBK", "UTF-8", fgets ( $fp ) );

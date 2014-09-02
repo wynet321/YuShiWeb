@@ -302,7 +302,7 @@ body {
 	color: #042c53;
 }
 
-#training {
+#trainingupdate {
 	width: 460px;
 	float: left;
 	/*border-right: 1px solid gray;*/
@@ -312,28 +312,28 @@ body {
 	-webkit-box-shadow: 1px 2px 3px #333;
 }
 
-#training_header {
+#trainingupdate_header {
 	padding: 5px 5px 0px 5px;
 	margin: 0;
 	font-size: 16px;
 	background: #c9eCED;
 }
 
-#training_header a {
+#trainingupdate_header a {
 	font-size: 16px;
 	float: right;
 	padding-right: 5px;
 }
 
-#training_header a:hover {
+#trainingupdate_header a:hover {
 	color: #042c53;
 }
 
-#training_content {
+#trainingupdate_content {
 	height: 120px;
 }
 
-#training_content ul li {
+#trainingupdate_content ul li {
 	padding-top: 5px;
 }
 
