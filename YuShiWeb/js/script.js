@@ -2,65 +2,81 @@
  * dennis(wynet321@163.com)
  */
 
-function picShow(m){
-	 document.getElementById("pic_content_1").style.display="none";
-	 document.getElementById("pic_content_2").style.display="none";
-	 document.getElementById("pic_content_3").style.display="none";
-	 document.getElementById("pic_content_"+m).style.display="block";
-	 document.getElementById("pic_mini_1").className="";
-	 document.getElementById("pic_mini_2").className="";
-	 document.getElementById("pic_mini_3").className="";
-	 document.getElementById("pic_mini_"+m).className="selected";
+function picShow(m) {
+	document.getElementById("pic_content_1").style.display = "none";
+	document.getElementById("pic_content_2").style.display = "none";
+	document.getElementById("pic_content_3").style.display = "none";
+	document.getElementById("pic_content_" + m).style.display = "block";
+	document.getElementById("pic_mini_1").className = "";
+	document.getElementById("pic_mini_2").className = "";
+	document.getElementById("pic_mini_3").className = "";
+	document.getElementById("pic_mini_" + m).className = "selected";
 }
 
 function sliderShow() {
-	if(!document.getElementById && !document.getElementsByTagName) return false;
+	if (!document.getElementById && !document.getElementsByTagName)
+		return false;
 	var slide = document.getElementById("slider");
 	var slideli = slide.getElementsByTagName("li");
-	for(var i=0; i<slideli.length; i++) {
+	for (var i = 0; i < slideli.length; i++) {
 		slideli[i].style.left += i * 940 + "px";
 	}
-	var prev = document.getElementById("prev"), next = document.getElementById("next");
+	var prev = document.getElementById("prev"), next = document
+			.getElementById("next");
 	var elem = document.getElementById("slider");
-	if(!elem.style.marginLeft) {
+	if (!elem.style.marginLeft) {
 		elem.style.marginLeft = "0";
 	}
 	var xpos = parseInt(elem.style.marginLeft);
 	next.onclick = function() {
-		if(xpos > 0 || xpos <= -1880) return false;
-		moveElement("slider",xpos -= 940,20);
+		if (xpos > 0 || xpos <= -1880)
+			return false;
+		moveElement("slider", xpos -= 940, 20);
 	}
 	prev.onclick = function() {
-		if(xpos >= 0 || xpos < -18800) return false;
-		moveElement("slider",xpos += 940,20);
+		if (xpos >= 0 || xpos < -18800)
+			return false;
+		moveElement("slider", xpos += 940, 20);
 	}
 }
-	function moveElement(elementID,gap,interval) {
-		var elem = document.getElementById(elementID);
-		if(elem.movement) {
-			clearTimeout(elem.movement);
-		}
-		var xpos = parseInt(elem.style.marginLeft);
-		if(xpos == gap) return true;
-		if(xpos > gap) {
-			var glist = Math.floor((gap - xpos)/10);
-			xpos = xpos + glist;
-		}
-		if(xpos < gap) {
-			var glist = Math.ceil((gap - xpos)/10);
-			xpos = xpos + glist;
-		}
-		elem.style.marginLeft = xpos + "px";
-		var move = "moveElement('"+elementID+"',"+gap+","+interval+")";
-		elem.movement = setTimeout(move,interval);
+function moveElement(elementID, gap, interval) {
+	var elem = document.getElementById(elementID);
+	if (elem.movement) {
+		clearTimeout(elem.movement);
 	}
+	var xpos = parseInt(elem.style.marginLeft);
+	if (xpos == gap)
+		return true;
+	if (xpos > gap) {
+		var glist = Math.floor((gap - xpos) / 10);
+		xpos = xpos + glist;
+	}
+	if (xpos < gap) {
+		var glist = Math.ceil((gap - xpos) / 10);
+		xpos = xpos + glist;
+	}
+	elem.style.marginLeft = xpos + "px";
+	var move = "moveElement('" + elementID + "'," + gap + "," + interval + ")";
+	elem.movement = setTimeout(move, interval);
+}
 
-	function menuShow(id){
-		var elem = document.getElementById(id);
-		elem.style.display="block";
-	}
-	function menuHide(id){
-		var elem=document.getElementById(id);
-		elem.style.display="none";
-	}
-	
+function menuShow(id) {
+	var elem = document.getElementById(id);
+	elem.style.display = "block";
+}
+function menuHide(id) {
+	var elem = document.getElementById(id);
+	elem.style.display = "none";
+	elem.style.opacity="0";
+}
+
+function fadeOut(id){
+	var elem = document.getElementById(id);
+	i=0
+	setInterval(function(){
+		i+=0.01; 
+		//s=i<0?0.01:(i>1?-0.01:s);
+			elem.style.opacity=i;
+			if(elem.style.opacity==100) return;
+	},10)
+}
