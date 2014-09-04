@@ -62,21 +62,10 @@ function moveElement(elementID, gap, interval) {
 
 function menuShow(id) {
 	var elem = document.getElementById(id);
-	elem.style.display = "block";
+	elem.className = 'fadein';
+	
 }
 function menuHide(id) {
 	var elem = document.getElementById(id);
-	elem.style.display = "none";
-	elem.style.opacity="0";
-}
-
-function fadeOut(id){
-	var elem = document.getElementById(id);
-	i=0
-	setInterval(function(){
-		i+=0.01; 
-		//s=i<0?0.01:(i>1?-0.01:s);
-			elem.style.opacity=i;
-			if(elem.style.opacity==100) return;
-	},10)
+	elem.className = '';
 }

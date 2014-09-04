@@ -57,11 +57,10 @@ body {
 	padding-left: 0px;
 	background: #c9eCED;
 	border-top: 1px solid #000;
-	border-bottom:1px solid #000;
+	border-bottom: 1px solid #000;
 }
 
 #menu ul {
-	z-index: 100;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -89,14 +88,24 @@ body {
 }
 
 /*1st sub level menu*/
+#menu ul li ul.fadein {
+	z-index:1;
+	opacity: 1;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
 #menu ul li ul {
+	z-index:0;
 	position: absolute;
 	left: 0;
-	display: none;
-	top: 34px;
+	top: 34px; box-shadow : rgb( 170, 170, 170) 1px 1px 5px;
+	-webkit-box-shadow : rgb( 170, 170, 170) 1px 1px 5px;
+	display: block;
+	opacity: 0;
 	box-shadow: rgb(170, 170, 170) 1px 1px 5px;
 	-webkit-box-shadow: rgb(170, 170, 170) 1px 1px 5px;
-	visibility: visible;
 }
 
 /*Sub level menu list items (undo style from Top level List Items)*/
@@ -126,6 +135,7 @@ body {
 }
 
 #slider_box {
+	z-index:1;
 	float: left;
 	width: 940px;
 	height: 330px;
@@ -183,7 +193,7 @@ body {
 	width: 940px;
 	height: 240px;
 	border-top: 1px solid #000;
-		box-shadow: 1px 2px 3px #333;
+	box-shadow: 1px 2px 3px #333;
 	-moz-box-shadow: 1px 2px 3px #333;
 	-webkit-box-shadow: 1px 2px 3px #333;
 }
@@ -340,7 +350,7 @@ body {
 #research {
 	width: 469px;
 	float: left;
-	margin-left:10px;
+	margin-left: 10px;
 	border-top: 1px solid gray;
 	box-shadow: 1px 2px 3px #333;
 	-moz-box-shadow: 1px 2px 3px #333;
@@ -399,7 +409,8 @@ body {
 #footer {
 	float: left;
 	position: relative;
-	top: 15px; width : 940px;
+	top: 15px;
+	width: 940px;
 	height: 130px;
 	color: black;
 	width: 940px;
