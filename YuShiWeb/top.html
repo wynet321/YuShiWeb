@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<?
+include "php/functions.inc";
+?>
 <head>
-<?php include "php/functions.inc";?>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>中国北京培训中心</title>
+<title>北京京电恒达科技文化发展有限公司</title>
 <link rel="shortcut icon" href="/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <link rel="stylesheet" type="text/css" href="/css/style_child.css">
 <script type="text/javascript" src="/js/script.js"></script>
 </head>
-<body>
+<body onload="sliderShow();">
 	<div id="cover">
 		<div id="main">
 			<div id="header">
@@ -21,9 +23,9 @@
 				<ul>
 					<li><a href="/index.html">网站首页</a></li>
 					<li style="line-height: 32px; font-size: 20px;">|</li>
-					<li style="z-index: 100;"><a href="#"
-						style="padding-right: 30px;" onmouseover="menuShow('aboutus');"
-						onmouseout="menuHide('aboutus');">关于我们<img src="/images/down.gif"
+					<li><a href="#" style="padding-right: 30px;" onmouseover="menuShow('aboutus');"
+						onmouseout="menuHide('aboutus');"
+						>关于我们<img src="/images/down.gif"
 							class="downarrowclass"></a>
 						<ul id="aboutus" onmouseover="menuShow('aboutus');"
 							onmouseout="menuHide('aboutus');">
@@ -32,7 +34,7 @@
 							<li><a href="/introduction/purpose.html">发展宗旨</a></li>
 						</ul></li>
 					<li style="line-height: 32px; font-size: 20px;">|</li>
-					<li style="z-index: 99;"><a href="#" style="padding-right: 30px;"
+					<li><a href="#" style="padding-right: 30px;"
 						onmouseover="menuShow('training');"
 						onmouseout="menuHide('training');">教学培训<img src="/images/down.gif"
 							class="downarrowclass"></a>
@@ -44,7 +46,7 @@
 							<li><a href="/training/product.html">培训产品</a></li>
 						</ul></li>
 					<li style="line-height: 32px; font-size: 20px;">|</li>
-					<li style="z-index: 98;"><a href="#" style="padding-right: 30px;"
+					<li><a href="#" style="padding-right: 30px;"
 						onmouseover="menuShow('consultation');"
 						onmouseout="menuHide('consultation');">科研咨询<img
 							src="/images/down.gif" class="downarrowclass"></a>
@@ -57,7 +59,7 @@
 							<li><a href="/consultation/infocenter.html">资料库</a></li>
 						</ul></li>
 					<li style="line-height: 32px; font-size: 20px;">|</li>
-					<li style="z-index: 97;"><a href="/contactinfo.html"
+					<li><a href="/contactinfo.html"
 						style="padding-right: 30px;">联系我们</a></li>
 				</ul>
 			</div>

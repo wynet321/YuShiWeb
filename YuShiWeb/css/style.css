@@ -97,7 +97,7 @@ body {
 }
 
 #menu ul li ul {
-	z-index:0;
+	z-index:-1;
 	position: absolute;
 	left: 0;
 	top: 34px; box-shadow : rgb( 170, 170, 170) 1px 1px 5px;
@@ -135,7 +135,7 @@ body {
 }
 
 #slider_box {
-	z-index:1;
+	
 	float: left;
 	width: 940px;
 	height: 330px;
