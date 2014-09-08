@@ -1,11 +1,62 @@
-2014年8月21日
-习近平主席抵达乌兰巴托
-央视网消息(焦点访谈)：8月是蒙古国的黄金季节，中蒙关系发展也迎来最好时节。8月21日至22日，中国国家主席习近平对蒙古国进行了国事访问。今年是中蒙建交65周年、中蒙友好合作关系条约修订20周年和中蒙友好交流年。在这个历史性时刻，如何放眼未来，推动两国关系攀登新高度，制定两国关系发展路线图，是摆在中蒙领导人面前的重要课题。
-
-2014年8月21日上午11点，习近平主席抵达乌兰巴托，蒙古国总理阿勒坦呼亚格夫妇到机场迎接。当地民众和少年儿童也冒雨赶来欢迎，他们挥舞着两国国旗，习近平夫妇特意走过去和他们握手。
-
-天空中下着小雨，但现场的蒙古国民众们很兴奋。有人说“这场喜雨是中国贵宾带来的！”在喜雨中习近平开启了这场非同寻常的外交之旅。
-
-有舆论评价，此次访蒙的三个“不多见”凸显了中国外交的新思维。这是习近平就任国家主席后的首次蒙古国之行，也是中国国家元首11年以来首次访蒙，同时还是蒙古国是习主席就任后第二个专程出访的国家，此前这样点对点的出访只有韩国。那么这次单独访蒙不同于以往习主席以多边峰会为平台，打包出访几个国家，这传递了什么信号呢？
-
-中国国际问题研究院院长曲星认为，习主席高度重视周边外交工作，提出对周边外交的亲、诚、惠、容四字理念，而且把这四字理念放到建设周边，对周边友好合作关系的发展投入了大量心血，也投入了大量资源。上次对韩国的点对点访问是一个重要表示，这次对蒙古点对点的访问也是周边战略或者周边友好全方位发展规划的一个重要举措。
+[0729/070000:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0729/070006:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0729/070008:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0801/064328:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0801/064331:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0801/064335:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/064225:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183404:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183409:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183412:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183414:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183417:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183419:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183422:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183424:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183427:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183429:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183432:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183434:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183437:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183439:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183442:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183444:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183447:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183449:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183452:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183454:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183457:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183459:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183502:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183504:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183507:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183509:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183512:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183514:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183517:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183519:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183522:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183524:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183527:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183529:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183532:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183534:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183537:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183539:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183542:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183544:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183547:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183549:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183552:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183554:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183557:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183559:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183602:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183604:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183607:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183609:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183612:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0805/183614:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0806/062411:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0806/062416:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+[0807/063930:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
