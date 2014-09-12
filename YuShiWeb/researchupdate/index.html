@@ -2,15 +2,15 @@
 include "../top.html";
 getDivLocation ( "/researchupdate/index.html", "科研动态" );
 ?>
-<div id="content">
+<div class="content" id="content">
 	<h1>科研动态</h1>
-	<div id="post">
+	<div class="post">
 	<?php
 	for($i = 1; $i < 21; $i ++) {
 		$newsArray = getNewsArray ( "", $i );
-		$tip = (strlen ( $newsArray ["title"] )) > 110 ? $newsArray ["title"] : "";
-		$title = (strlen ( $newsArray ["title"] ) < 110 ? $newsArray ["title"] : substr ( $newsArray ["title"], 0, 108 ) . "...");
-		echo "<div style='padding: 10px 0px 5px 10px;'><a href=\"/researchupdate/researchupdate.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></div>";
+		$time = $newsArray ["time"];
+		$title = $newsArray ["title"];
+		echo "<div style='padding: 10px 0px 5px 10px;'><a href=\"/researchupdate/researchupdate.html?seqId=" . $i . "\" title=\"" . $title . "\">" . $time . "&nbsp;-&nbsp;" . $title . "</a></div>";
 	}
 	?>
 	</div>

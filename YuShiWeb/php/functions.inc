@@ -19,7 +19,7 @@ function getHit($counter_file) {
 	return ($count);
 }
 function getDivLocation($url, $name) {
-	echo "<div id=\"location\">
+	echo "<div class=\"location\">
 	<span>当前位置：</span>&nbsp;&nbsp;<a href=\"/index.html\">网站首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a
 	href=\"" . $url . "\">" . $name . "</a>
 	</div>";

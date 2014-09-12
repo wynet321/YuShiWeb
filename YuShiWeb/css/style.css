@@ -296,7 +296,7 @@ body {
 	float: left;
 	top: 20px;
 	width: 940px;
-	height: 160px;
+	height: 200px;
 	margin-top: 10px;
 	/*border-top: 2px solid gray;*/
 	background: #fafaff;
@@ -340,7 +340,7 @@ body {
 }
 
 .trainingupdate_content {
-	height: 120px;
+	height: 160px;
 }
 
 .trainingupdate_content ul li {
@@ -375,7 +375,7 @@ body {
 }
 
 .research_content {
-	height: 120px;
+	height: 160px;
 }
 
 .research_content ul li {

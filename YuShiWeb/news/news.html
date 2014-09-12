@@ -3,10 +3,10 @@ include "../top.html";
 getDivLocation (  "/news/index.html", "新闻快讯"  );
 $newsArray = getNewsArray ( "../news/", $_REQUEST ["seqId"] );
 ?>
-<div id="content">
+<div class="content" id="content">
 	<h1><?php echo $newsArray["title"];?></h1>
 	<h2><?php echo $newsArray["time"];?></h2>
-	<div id="post"><?php echo $newsArray["content"];?></div>
+	<div class="post"><?php echo $newsArray["content"];?></div>
 	<div style="height: 60px;">&nbsp;</div>
 </div>
 <?php

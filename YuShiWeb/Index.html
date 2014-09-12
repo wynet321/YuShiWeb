@@ -13,19 +13,19 @@ $hit = getHit ( "counter.txt" );
 </head>
 <body onload="sliderShow();">
 	<div class="cover" id="cover">
-		<div id="main" class="main">
-			<div id="header" class="header">
-				<div id="logo" class="logo">
+		<div class="main">
+			<div class="header">
+				<div class="logo">
 					<img src="/images/logo.gif">
 				</div>
 			</div>
-			<div id="menu" class="menu">
+			<div class="menu">
 				<ul>
 					<li><a href="/index.html">网站首页</a></li>
 					<li style="line-height: 32px; font-size: 20px;">|</li>
-					<li><a href="#" style="padding-right: 30px;" onmouseover="menuShow('aboutus');"
-						onmouseout="menuHide('aboutus');"
-						>关于我们<img src="/images/down.gif"
+					<li><a href="#" style="padding-right: 30px;"
+						onmouseover="menuShow('aboutus');"
+						onmouseout="menuHide('aboutus');">关于我们<img src="/images/down.gif"
 							class="downarrow"></a>
 						<ul id="aboutus" onmouseover="menuShow('aboutus');"
 							onmouseout="menuHide('aboutus');">
@@ -59,8 +59,7 @@ $hit = getHit ( "counter.txt" );
 							<li><a href="/consultation/infocenter.html">资料库</a></li>
 						</ul></li>
 					<li style="line-height: 32px; font-size: 20px;">|</li>
-					<li><a href="/contactinfo.html"
-						style="padding-right: 30px;">联系我们</a></li>
+					<li><a href="/contactinfo.html" style="padding-right: 30px;">联系我们</a></li>
 				</ul>
 			</div>
 			<div class="slider_box">
@@ -87,10 +86,9 @@ $hit = getHit ( "counter.txt" );
 						<?php
 						for($i = 1; $i < 6; $i ++) {
 							$newsArray = getNewsArray ( "news/", $i );
-							$tip = (strlen ( $newsArray ["title"] )) > 108 ? $newsArray ["title"] : "";
-							$newsLine= $newsArray ["time"] . "&nbsp;-&nbsp;" . $newsArray["title"];
-							$title = (strlen ($newsLine ) < 108 ? $newsLine : subString($newsLine, 0, 105). "...");
-							echo "<div><a href=\"/news/news.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $title . "</a></div>";
+							$tip = (strlen ( $newsArray ["title"] )) > 110 ? $newsArray ["title"] : "";
+							$title=$newsArray ["time"] . "&nbsp;-&nbsp;" . $newsArray["title"];
+							echo "<div style='white-space:nowrap;overflow-x:hidden;margin-right:10px;'><a href=\"/news/news.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $title . "</a></div>";
 						}
 						?>
 						</div>
@@ -121,16 +119,16 @@ $hit = getHit ( "counter.txt" );
 						&nbsp;&nbsp;培训动态<a href="/trainingupdate/index.html">更多...</a>
 					</div>
 					<div class="trainingupdate_content">
-						<ul>
+						
 						<?php
 						for($i = 1; $i < 5; $i ++) {
 							$newsArray = getNewsArray ( "trainingupdate/", $i );
 							$tip = (strlen ( $newsArray ["title"] )) > 56 ? $newsArray ["title"] : "";
 							$title = (strlen ( $newsArray ["title"] ) < 56 ? $newsArray ["title"] : substr ( $newsArray ["title"], 0, 54 ) . "...");
-							echo "<li><a href=\"/trainingupdate/trainingupdate.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></li>";
+							echo "<div style='white-space:nowrap;overflow-x:hidden;margin:15px;'><b>&#183;&nbsp;&nbsp;&nbsp;&nbsp;</b><a href=\"/trainingupdate/trainingupdate.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></div>";
 						}
 						?>
-							</ul>
+						
 					</div>
 				</div>
 				<div class="research">
@@ -138,16 +136,14 @@ $hit = getHit ( "counter.txt" );
 						&nbsp;&nbsp;科研动态<a href="/researchupdate/index.html">更多...</a>
 					</div>
 					<div class="research_content">
-						<ul>
 						<?php
 						for($i = 1; $i < 5; $i ++) {
 							$newsArray = getNewsArray ( "researchupdate/", $i );
 							$tip = (strlen ( $newsArray ["title"] )) > 56 ? $newsArray ["title"] : "";
 							$title = (strlen ( $newsArray ["title"] ) < 56 ? $newsArray ["title"] : substr ( $newsArray ["title"], 0, 54 ) . "...");
-							echo "<li><a href=\"/researchupdate/researchupdate.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></li>";
+							echo "<div style='white-space:nowrap;overflow-x:hidden;overflow-y:hidden;margin:15px;'><b>&#183;&nbsp;&nbsp;&nbsp;&nbsp;</b><a href=\"/researchupdate/researchupdate.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></div>";
 						}
 						?>
-						</ul>
 					</div>
 				</div>
 			</div>
