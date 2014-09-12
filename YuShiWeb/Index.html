@@ -87,7 +87,7 @@ $hit = getHit ( "counter.txt" );
 						for($i = 1; $i < 6; $i ++) {
 							$newsArray = getNewsArray ( "news/", $i );
 							$tip = (strlen ( $newsArray ["title"] )) > 110 ? $newsArray ["title"] : "";
-							$title=$newsArray ["time"] . "&nbsp;-&nbsp;" . $newsArray["title"];
+							$title = $newsArray ["time"] . "&nbsp;-&nbsp;" . $newsArray ["title"];
 							echo "<div style='white-space:nowrap;overflow-x:hidden;margin-right:10px;'><a href=\"/news/news.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $title . "</a></div>";
 						}
 						?>
