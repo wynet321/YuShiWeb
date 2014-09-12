@@ -1,62 +1,8 @@
-[0729/070000:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0729/070006:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0729/070008:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0801/064328:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0801/064331:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0801/064335:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/064225:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183404:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183409:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183412:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183414:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183417:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183419:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183422:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183424:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183427:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183429:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183432:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183434:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183437:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183439:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183442:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183444:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183447:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183449:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183452:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183454:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183457:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183459:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183502:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183504:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183507:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183509:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183512:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183514:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183517:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183519:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183522:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183524:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183527:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183529:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183532:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183534:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183537:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183539:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183542:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183544:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183547:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183549:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183552:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183554:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183557:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183559:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183602:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183604:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183607:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183609:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183612:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0805/183614:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0806/062411:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0806/062416:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
-[0807/063930:WARNING:dns_config_service_win.cc(599)] Failed to read DnsConfig.
+2012/10/1
+dennis wang
+[Notes]
+KitType=1
+Directory=c:\notes\data
+MailServer=d23ml028
+MailFile=mail6\wangyi.nsf
+Location=Online,9F6,CN=Yi Wang/OU=China/O=IBM

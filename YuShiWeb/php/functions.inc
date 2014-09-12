@@ -56,3 +56,20 @@ function getTitleArray($category) {
 	}
 	return $newsTitleArray;
 }
+function subString($string,$startIndex,$length){
+	if(strlen($string) < $length){
+		return substr($string, $startIndex);
+	}
+	
+	$char=ord($string[$startIndex + $length-1]);
+	if($char >= 224 && $char <= 239){
+		return substr($string, $beginIndex, $length-1);
+	}
+	
+	$char = ord($string[$startIndex + $length - 2]);
+	if($char >= 224 && $char <= 239){
+		return substr($string, $startIndex, $length - 2);
+	}
+	
+	return substr($string, $startIndex, $length);
+}

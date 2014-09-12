@@ -12,21 +12,21 @@ $hit = getHit ( "counter.txt" );
 <script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body onload="sliderShow();">
-	<div id="cover">
-		<div id="main">
-			<div id="header">
-				<div id="logo">
+	<div class="cover" id="cover">
+		<div id="main" class="main">
+			<div id="header" class="header">
+				<div id="logo" class="logo">
 					<img src="/images/logo.gif">
 				</div>
 			</div>
-			<div id="menu">
+			<div id="menu" class="menu">
 				<ul>
 					<li><a href="/index.html">网站首页</a></li>
 					<li style="line-height: 32px; font-size: 20px;">|</li>
 					<li><a href="#" style="padding-right: 30px;" onmouseover="menuShow('aboutus');"
 						onmouseout="menuHide('aboutus');"
 						>关于我们<img src="/images/down.gif"
-							class="downarrowclass"></a>
+							class="downarrow"></a>
 						<ul id="aboutus" onmouseover="menuShow('aboutus');"
 							onmouseout="menuHide('aboutus');">
 							<li><a href="/introduction/organization.html">机构设置</a></li>
@@ -37,7 +37,7 @@ $hit = getHit ( "counter.txt" );
 					<li><a href="#" style="padding-right: 30px;"
 						onmouseover="menuShow('training');"
 						onmouseout="menuHide('training');">教学培训<img src="/images/down.gif"
-							class="downarrowclass"></a>
+							class="downarrow"></a>
 						<ul id="training" onmouseover="menuShow('training');"
 							onmouseout="menuHide('training');">
 							<li><a href="/training/plan.html">培训计划</a></li>
@@ -49,7 +49,7 @@ $hit = getHit ( "counter.txt" );
 					<li><a href="#" style="padding-right: 30px;"
 						onmouseover="menuShow('consultation');"
 						onmouseout="menuHide('consultation');">科研咨询<img
-							src="/images/down.gif" class="downarrowclass"></a>
+							src="/images/down.gif" class="downarrow"></a>
 						<ul id="consultation" onmouseover="menuShow('consultation');"
 							onmouseout="menuHide('consultation');">
 							<li><a href="/consultation/consultationservice.html">咨询服务</a></li>
@@ -63,38 +63,39 @@ $hit = getHit ( "counter.txt" );
 						style="padding-right: 30px;">联系我们</a></li>
 				</ul>
 			</div>
-			<div id="slider_box">
-				<button id="prev">&laquo;</button>
-				<button id="next">&raquo;</button>
-				<div id="slider">
+			<div class="slider_box">
+				<button class="prev" id="prev">&laquo;</button>
+				<button class="next" id="next">&raquo;</button>
+				<div id="slider" class="slider">
 					<ul>
 						<li><img src="/images/banner1.gif" width="940" height="320"
 							alt="1" title="1"></li>
 						<li><img src="/images/banner2.gif" width="940" height="320"
 							alt="2" title="2"></li>
 						<li><img src="/images/banner3.gif" width="940" height="320"
-							alt="2" title="2"></li>
+							alt="2" title="3"></li>
 					</ul>
 				</div>
 			</div>
-			<div id="news_box">
+			<div class="news_box">
 				<div>
-					<div id="news_header">
+					<div class="news_header">
 						&nbsp;&nbsp;新闻快讯<a href="/news/index.html">更多...</a>
 					</div>
-					<div id="news_content">
-						<div id="news_list">
+					<div class="news_content">
+						<div class="news_list">
 						<?php
 						for($i = 1; $i < 6; $i ++) {
 							$newsArray = getNewsArray ( "news/", $i );
-							$tip = (strlen ( $newsArray ["title"] )) > 110 ? $newsArray ["title"] : "";
-							$title = (strlen ( $newsArray ["title"] ) < 110 ? $newsArray ["title"] : substr ( $newsArray ["title"], 0, 108 ) . "...");
-							echo "<div><a href=\"/news/news.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $newsArray ["time"] . "&nbsp;-&nbsp;" . $title . "</a></div>";
+							$tip = (strlen ( $newsArray ["title"] )) > 108 ? $newsArray ["title"] : "";
+							$newsLine= $newsArray ["time"] . "&nbsp;-&nbsp;" . $newsArray["title"];
+							$title = (strlen ($newsLine ) < 108 ? $newsLine : subString($newsLine, 0, 105). "...");
+							echo "<div><a href=\"/news/news.html?seqId=" . $i . "\" title=\"" . $tip . "\">" . $title . "</a></div>";
 						}
 						?>
 						</div>
-						<div id="news_pic">
-							<div id="pic_content">
+						<div class="news_pic">
+							<div class="pic_content">
 								<div id="pic_content_1" style="display: block;">
 									<a href="list1.html" title="list1"><img src="/images/list1.gif"></a>
 								</div>
@@ -105,7 +106,7 @@ $hit = getHit ( "counter.txt" );
 									<a href="list3.html" title="list3"><img src="/images/list3.gif"></a>
 								</div>
 							</div>
-							<div id="pic_mini">
+							<div class="pic_mini">
 								<a id="pic_mini_1" onmouseover="picShow(1)" class="selected">&nbsp;</a>
 								<a id="pic_mini_2" onmouseover="picShow(2)">&nbsp;</a> <a
 									id="pic_mini_3" onmouseover="picShow(3)">&nbsp;</a>
@@ -114,12 +115,12 @@ $hit = getHit ( "counter.txt" );
 					</div>
 				</div>
 			</div>
-			<div id="update_box">
-				<div id="trainingupdate">
-					<div id="trainingupdate_header">
+			<div class="update_box">
+				<div class="trainingupdate">
+					<div class="trainingupdate_header">
 						&nbsp;&nbsp;培训动态<a href="/trainingupdate/index.html">更多...</a>
 					</div>
-					<div id="trainingupdate_content">
+					<div class="trainingupdate_content">
 						<ul>
 						<?php
 						for($i = 1; $i < 5; $i ++) {
@@ -132,11 +133,11 @@ $hit = getHit ( "counter.txt" );
 							</ul>
 					</div>
 				</div>
-				<div id="research">
-					<div id="research_header">
+				<div class="research">
+					<div class="research_header">
 						&nbsp;&nbsp;科研动态<a href="/researchupdate/index.html">更多...</a>
 					</div>
-					<div id="research_content">
+					<div class="research_content">
 						<ul>
 						<?php
 						for($i = 1; $i < 5; $i ++) {
@@ -150,14 +151,14 @@ $hit = getHit ( "counter.txt" );
 					</div>
 				</div>
 			</div>
-			<div id="links">
+			<div class="links">
 				链接&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <a
 					href="http://www.sina.com.cn" target="_blank">新浪网</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
 				<a href="http://www.sohu.com" target="_blank">搜狐网</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
 				<a href="http://www.google.com" target="_blank">谷歌</a>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
 				<a href="http://www.163.com" target="_blank">网易</a>
 			</div>
-			<div id="footer">
+			<div class="footer">
 				<p>
 					COPYRIGHT 2010-2014&nbsp;&nbsp;<a href="http://www.abc.com/">http://www.abc.com/</a>&nbsp;&nbsp;-&nbsp;&nbsp;网站访问量：
 					您是第<b><?echo $hit;?></b>位访客！
