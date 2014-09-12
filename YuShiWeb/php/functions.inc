@@ -5,7 +5,7 @@ function getHit($counter_file) {
 			$fp = fopen ( $counter_file, "r" );
 			$count = fgets ( $fp ) + 1;
 			fclose ( $fp );
-			file_put_contents($counter_file, $count);
+			file_put_contents ( $counter_file, $count );
 		} else {
 			$count = 1;
 			$fp = fopen ( $counter_file, "w" );
@@ -56,20 +56,20 @@ function getTitleArray($category) {
 	}
 	return $newsTitleArray;
 }
-function subString($string,$startIndex,$length){
-	if(strlen($string) < $length){
-		return substr($string, $startIndex);
+function subString($string, $startIndex, $length) {
+	if (strlen ( $string ) < $length) {
+		return substr ( $string, $startIndex );
 	}
 	
-	$char=ord($string[$startIndex + $length-1]);
-	if($char >= 224 && $char <= 239){
-		return substr($string, $beginIndex, $length-1);
+	$char = ord ( $string [$startIndex + $length - 1] );
+	if ($char >= 224 && $char <= 239) {
+		return substr ( $string, $beginIndex, $length - 1 );
 	}
 	
-	$char = ord($string[$startIndex + $length - 2]);
-	if($char >= 224 && $char <= 239){
-		return substr($string, $startIndex, $length - 2);
+	$char = ord ( $string [$startIndex + $length - 2] );
+	if ($char >= 224 && $char <= 239) {
+		return substr ( $string, $startIndex, $length - 2 );
 	}
 	
-	return substr($string, $startIndex, $length);
+	return substr ( $string, $startIndex, $length );
 }
